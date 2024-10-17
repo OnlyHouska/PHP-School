@@ -1,4 +1,4 @@
 ### Project list
 ___
 
-* [Timetable](./timetable/)
+* [Timetable](https://github.com/OnlyHouska/PHP-School/tree/timetable?tab=readme-ov-file)
