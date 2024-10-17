@@ -1,0 +1,7 @@
+/* IMPORT GLOBAL STYLES */
+@import url('./global.css');
+
+/* IMPORT STYLES */
+@import url('./upload.css');
+@import url('./timetable.css');
+@import url('./multigroup.css');

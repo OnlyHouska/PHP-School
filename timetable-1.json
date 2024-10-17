@@ -1,0 +1,412 @@
+{
+  "monday": {
+    "0": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "1": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "2": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "3": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "4": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "5": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "6": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "7": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "8": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "9": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    }
+  },
+  "tuesday": {
+    "0": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "1": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "2": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "3": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "4": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "5": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "6": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "7": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "8": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "9": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    }
+  },
+  "wednesday": {
+    "0": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "1": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "2": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "3": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "4": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "5": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "6": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "7": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "8": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "9": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    }
+  },
+  "thursday": {
+    "0": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "1": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "2": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "3": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "4": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "5": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "6": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "7": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "8": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "9": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    }
+  },
+  "friday": {
+    "0": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "1": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "2": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "3": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "4": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "5": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "6": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "7": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "8": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    },
+    "9": {
+      "subject": "",
+      "shortcut": "",
+      "teacher": "",
+      "room": "",
+      "group": "",
+      "specialState": ""
+    }
+  }
+}
