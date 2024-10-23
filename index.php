@@ -1,26 +1,6 @@
 <?php
 include 'TimetableReader.php';
 
-//if (isset($_POST['submitTimetableFile'])) {
-//    echo "<pre>";
-//    print_r($_FILES);
-//    echo "</pre>";
-//
-//    if (isset($_FILES['insertTimetableFile'])) {
-//        if ($_FILES['insertTimetableFile']['error'] === UPLOAD_ERR_OK) {
-//            $fileTmpPath = $_FILES['insertTimetableFile']['tmp_name'];
-//            echo "File uploaded successfully: $fileTmpPath";
-//            readTimetable($fileTmpPath);
-//        } else {
-//            echo "Error uploading the file. Error code: " . $_FILES['insertTimetableFile']['error'];
-//        }
-//    } else {
-//        echo "File was not uploaded correctly.";
-//    }
-//}
-
-//readTimetable("timetable-1.json");
-
 spl_autoload_register(function ($className) {
     require_once("$className.class.php");
 });
