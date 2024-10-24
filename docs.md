@@ -10,6 +10,30 @@ ___
 #### Objektový model
 * PHP podporuje objektově orientované programování
 * Tj. třídy, objekty, dědičnost, interface,...
+* Vytváření tříd je umožněno přes keyword `class`
+* Příklad třídy:
+    ```php
+    class MyClass {
+        public $property;
+        public function __construct($property) {
+            $this->property = $property;
+        }
+    }
+    ```
+* Vytvoření instance třídy:
+  ```php
+  $instance = new MyClass("value");
+  ```
+* Metoda `__construct()` patří k magickým metodám. To jsou metody, ktere se volají automaticky při splnění určitých podmínek. `__construct()` se volá při vytvoření instance třídy. Každá magická metoda začíná prefixem `__`, jsou predefinované a nemůžou být odstraňeny nebo manuálně vytvořeny
+  * Příklady dalších magických metod
+    * `__destruct()` - volá se při zničení instance třídy
+    * `__get($name)` - volá se při pokusu o přístup k neexistující vlastnosti
+    * `__set($name, $value)` - volá se při pokusu o nastavení neexistující vlastnosti
+    * `__call($name, $arguments)` - volá se při pokusu o volání neexistující metody
+    * `__toString()` - volá se při pokusu o výpis objektu jako string
+  ``````
+* `$this` je reference na aktuální objekt
+* `public` je viditelnost vlastnosti nebo metody. Existují i další viditelnosti: `private` (vidí pouze aktuální objekt) a `protected` (vidí aktuální objekt a objekty, které z něho dědí)
 
 #### Práce s poli - důležité funkce
 * `array_push($array, $value)` - přidá prvek na konec pole
@@ -19,6 +43,7 @@ ___
 * `array_merge($array1, $array2)` - spojí dvě pole
 * `array_slice($array, $offset, $length)` - vrátí část pole
 * `array_splice($array, $offset, $length, $replacement)` - nahradí část pole jiným polem
+* 
 
 ---
 
