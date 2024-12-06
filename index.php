@@ -12,7 +12,7 @@ spl_autoload_register(function ($className) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Salieri Pizza</title>
+    <title>Pizza</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
