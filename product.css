@@ -1,0 +1,24 @@
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.product-detail {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}

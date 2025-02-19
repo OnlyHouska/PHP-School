@@ -1,0 +1,14 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    width: fit-content;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}

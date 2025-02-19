@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.auth-buttons {
+    margin-bottom: 20px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.category-list li {
+    margin-bottom: 5px;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.category-list a:hover {
+    text-decoration: underline;
+}
