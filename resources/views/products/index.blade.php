@@ -13,7 +13,7 @@
 </head>
     <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 py-0 min-h-screen flex-col">
 
-        <header class="sticky top-6 border-b-gray-400 backdrop-blur-2xl border-b-2 pb-3 mb-12 flex self-center w-full lg:max-w-5xl max-w-[335px] text-sm  not-has-[nav]:hidden items-center">
+        <header class="sticky top-0 py-6 border-b-gray-400 backdrop-blur-2xl border-b-2 pb-3 mb-12 flex self-center w-full lg:max-w-5xl max-w-[335px] text-sm  not-has-[nav]:hidden items-center">
             <nav class="flex justify-between w-full">
                 <h1 class="text-white text-3xl">Products</h1>
 
@@ -39,6 +39,9 @@
         <ul class=" w-full lg:max-w-4xl max-w-[335px] flex self-center flex-col">
             @foreach ($products as $product)
                 <li class="border border-gray-300 rounded-md p-4 mb-4 bg-white shadow-sm dark:bg-gray-800 flex justify-between items-center">
+                    @if($product->image)
+                        <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" width="100" class="mr-8">
+                    @endif
                     <div class="mr-10 max-w-[80%]">
                         <h2 class=" border-b-white border-b-2 pb-2 text-lg font-semibold text-gray-800 dark:text-gray-200 w-fit px-4">{{ $product->name }}</h2>
                         <p class="mt-4 mb-4 text-sm text-gray-600 dark:text-gray-300">Description: {{ $product->description }}</p>
