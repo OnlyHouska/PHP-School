@@ -42,12 +42,12 @@
                     @if($product->image)
                         <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" width="100" class="mr-8">
                     @endif
-                    <div class="mr-10 max-w-[80%]">
+                    <div class="mr-10 max-w-[70%]">
                         <h2 class=" border-b-white border-b-2 pb-2 text-lg font-semibold text-gray-800 dark:text-gray-200 w-fit px-4">{{ $product->name }}</h2>
                         <p class="mt-4 mb-4 text-sm text-gray-600 dark:text-gray-300">Description: {{ $product->description }}</p>
                         <a href="#" class="text-sm text-gray-600 dark:text-gray-400">Category: {{ $product->category ? $product->category->name : 'N/A' }}</a>
                     </div>
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-col gap-3 min-w-[15%]">
                         <p class="text-2xl font-bold text-gray-800 dark:text-red-400 text-right">{{ $product->price }},-</p>
                         <a class="transition-all hover:bg-lime-900 text-white bg-lime-500 px-5 py-2 rounded-sm border-white border-[1px]" href="">Add to cart</a>
                     </div>
