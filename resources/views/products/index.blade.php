@@ -66,7 +66,14 @@
                     </div>
                     <div class="flex flex-col gap-3 min-w-[15%]">
                         <p class="text-2xl font-bold text-gray-800 dark:text-red-400 text-right">{{ $product->price }},-</p>
-                        <a class="transition-all hover:bg-lime-900 text-white bg-lime-500 px-5 py-2 rounded-sm border-white border-[1px]" href="">Add to cart</a>
+                        <form action="{{ route('cart.add', $product) }}" method="POST" class="flex items-center gap-4">
+                            @csrf
+
+                            <button type="submit"
+                                    class="transition-all hover:bg-lime-900 text-white bg-lime-500 px-6 py-3 rounded-sm border-white border-[1px]">
+                                Add to cart
+                            </button>
+                        </form>
                     </div>
                 </li>
             @endforeach
