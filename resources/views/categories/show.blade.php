@@ -57,7 +57,7 @@
                                 {{ $product->name }}
                             </a>
                         </h2>
-                        <p class="mt-4 mb-4 text-sm text-gray-600 dark:text-gray-300">Description: {{ $product->description }}</p>
+                        <p class="mt-4 mb-4 text-sm text-gray-600 dark:text-gray-300">{{ $product->description }}</p>
                     </div>
                     <div class="flex flex-col gap-3 min-w-[15%]">
                         <p class="text-2xl font-bold text-gray-800 dark:text-red-400 text-right">{{ $product->price }},-</p>

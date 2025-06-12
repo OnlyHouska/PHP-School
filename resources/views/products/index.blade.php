@@ -19,12 +19,12 @@
 
                 <div class="flex justify-end w-full gap-6">
 
-                    {{--                @auth--}}
+                                    @auth
                     <a class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal"
                         href="{{ route('products.create') }}">
                             Create New Product
                     </a>
-    {{--                @endauth--}}
+                    @endauth
 
                     <a class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal"
                        href="{{ route('cart.index') }}">
@@ -54,7 +54,7 @@
                                 {{ $product->name }}
                             </a>
                         </h2>
-                        <p class="mt-4 mb-4 text-sm text-gray-600 dark:text-gray-300">Description: {{ $product->description }}</p>
+                        <p class="mt-4 mb-4 text-sm text-gray-600 dark:text-gray-300">{{ $product->description }}</p>
                         @if($product->category)
                             <a href="{{ route('categories.show', $product->category) }}" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">
                                 Category: {{ $product->category->name }}
