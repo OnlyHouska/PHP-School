@@ -11,7 +11,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-    <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 py-0 min-h-screen flex-col">
+    <body class="bg-[#FDFDFC] dark:bg-[#001114] text-[#1b1b18] flex p-6 lg:p-8 py-0 min-h-screen flex-col">
 
         <header class="sticky top-0 py-6 border-b-gray-400 backdrop-blur-2xl border-b-2 pb-3 mb-12 flex self-center w-full lg:max-w-5xl max-w-[335px] text-sm  not-has-[nav]:hidden items-center">
             <nav class="flex justify-between w-full">
@@ -43,7 +43,12 @@
                         <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}" width="100" class="mr-8">
                     @endif
                     <div class="mr-10 max-w-[70%]">
-                        <h2 class=" border-b-white border-b-2 pb-2 text-lg font-semibold text-gray-800 dark:text-gray-200 w-fit px-4">{{ $product->name }}</h2>
+                        <h2 class=" border-b-white border-b-2 pb-2 text-lg font-semibold text-gray-800 dark:text-gray-200 w-fit px-4">
+                            <a href="{{ route('products.show', ['product' => $product->slug]) }}"
+                               class="hover:underline">
+                                {{ $product->name }}
+                            </a>
+                        </h2>
                         <p class="mt-4 mb-4 text-sm text-gray-600 dark:text-gray-300">Description: {{ $product->description }}</p>
                         <a href="#" class="text-sm text-gray-600 dark:text-gray-400">Category: {{ $product->category ? $product->category->name : 'N/A' }}</a>
                     </div>

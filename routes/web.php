@@ -12,6 +12,9 @@ Route::get('catalog', [ProductController::class, 'index'])->name('products.index
 Route::get('product/new', [ProductController::class, 'create'])->name('products.create');
 Route::post('products', [ProductController::class, 'store'])->name('products.store');
 
+Route::get('/products/{product:slug}', [ProductController::class, 'show'])
+    ->name('products.show');
+
 Route::get('login', function () {
     return view('login');
 })->name('login');
