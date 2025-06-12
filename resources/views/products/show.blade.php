@@ -23,6 +23,11 @@
                 Back to catalog
             </a>
 
+            <a class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal"
+               href="{{ route('cart.index') }}">
+                Cart ({{ app(App\Http\Controllers\CartController::class)->getCartCount() }})
+            </a>
+
             <a class=""
                href="{{ route('index') }}">
                 <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 24 24">
@@ -44,11 +49,31 @@
         <div class="flex-1">
             <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-200">{{ $product->name }}</h2>
             <p class="text-gray-600 dark:text-gray-300 mb-4">{{ $product->description }}</p>
-            <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Category: {{ $product->category ? $product->category->name : 'N/A' }}</p>
+            @if($product->category)
+                <a href="{{ route('categories.show', $product->category) }}" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                    Category: {{ $product->category->name }}
+                </a>
+            @else
+                <span class="text-sm text-gray-600 dark:text-gray-400">Category: N/A</span>
+            @endif
             <p class="text-3xl font-bold text-gray-800 dark:text-red-400 mb-6">{{ $product->price }},-</p>
-            <a href="#" class="transition-all hover:bg-lime-900 text-white bg-lime-500 px-6 py-3 rounded-sm border-white border-[1px]">
-                Add to cart
-            </a>
+            <form action="{{ route('cart.add', $product) }}" method="POST" class="flex items-center gap-4">
+                @csrf
+                <div class="flex items-center">
+                    <label for="quantity" class="mr-2 text-sm">Quantity:</label>
+                    <input type="number"
+                           id="quantity"
+                           name="quantity"
+                           value="1"
+                           min="1"
+                           max="99"
+                           class="w-16 px-2 py-1 border border-gray-300 rounded text-center">
+                </div>
+                <button type="submit"
+                        class="transition-all hover:bg-lime-900 text-white bg-lime-500 px-6 py-3 rounded-sm border-white border-[1px]">
+                    Add to cart
+                </button>
+            </form>
         </div>
     </div>
 </div>

@@ -26,6 +26,11 @@
                     </a>
     {{--                @endauth--}}
 
+                    <a class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] text-[#1b1b18] border border-transparent hover:border-[#19140035] dark:hover:border-[#3E3E3A] rounded-sm text-sm leading-normal"
+                       href="{{ route('cart.index') }}">
+                        Cart ({{ app(App\Http\Controllers\CartController::class)->getCartCount() }})
+                    </a>
+
                     <a class=""
                         href="{{ route('index') }}">
                         <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 24 24">
@@ -50,7 +55,14 @@
                             </a>
                         </h2>
                         <p class="mt-4 mb-4 text-sm text-gray-600 dark:text-gray-300">Description: {{ $product->description }}</p>
-                        <a href="#" class="text-sm text-gray-600 dark:text-gray-400">Category: {{ $product->category ? $product->category->name : 'N/A' }}</a>
+                        @if($product->category)
+                            <a href="{{ route('categories.show', $product->category) }}" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                                Category: {{ $product->category->name }}
+                            </a>
+                        @else
+                            <span class="text-sm text-gray-600 dark:text-gray-400">Category: N/A</span>
+                        @endif
+
                     </div>
                     <div class="flex flex-col gap-3 min-w-[15%]">
                         <p class="text-2xl font-bold text-gray-800 dark:text-red-400 text-right">{{ $product->price }},-</p>

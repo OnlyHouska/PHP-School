@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -8,11 +9,19 @@ class Category extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name'];
+    protected $fillable = [
+        'name',
+        'description',
+        'slug',
+    ];
 
-    // Define the inverse relationship with Product
     public function products()
     {
         return $this->hasMany(Product::class);
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 }
